@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="card shadow-lg border-0">
+                    <div class="card-body p-5">
+                        <div class="mb-4">
+                            <i class="fas fa-check-circle fa-5x text-success mb-3"></i>
+                            <h1 class="display-4 fw-bold text-success">Registration Successful!</h1>
+                        </div>
+
+                        <div class="alert alert-success border-0 shadow-sm">
+                            <h4 class="alert-heading">
+                                <i class="fas fa-party-horn me-2"></i>Welcome to Anantya 2025!
+                            </h4>
+                            <p class="mb-0">
+                                Thank you for registering for ACM PCCoE's flagship technical event. 
+                                Your journey into innovation and technology starts here!
+                            </p>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-md-6 mb-3">
+                                <div class="p-3 bg-light rounded">
+                                    <i class="fas fa-calendar-alt fa-2x text-primary mb-2"></i>
+                                    <h6 class="fw-bold">Event Dates</h6>
+                                    <p class="mb-0">March 7-8, 2025</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="p-3 bg-light rounded">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
+                                    <h6 class="fw-bold">Venue</h6>
+                                    <p class="mb-0">PCCOE Campus, Nigdi, Pune</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="fw-bold mb-3">What's Next?</h5>
+                            <div class="row">
+                                <div class="col-lg-4 mb-3">
+                                    <i class="fas fa-envelope fa-2x text-info mb-2"></i>
+                                    <h6>Check Your Email</h6>
+                                    <p class="small text-muted">Look for confirmation details and event schedule</p>
+                                </div>
+                                <div class="col-lg-4 mb-3">
+                                    <i class="fas fa-users fa-2x text-info mb-2"></i>
+                                    <h6>Join Community</h6>
+                                    <p class="small text-muted">Follow our social media for updates</p>
+                                </div>
+                                <div class="col-lg-4 mb-3">
+                                    <i class="fas fa-rocket fa-2x text-info mb-2"></i>
+                                    <h6>Prepare</h6>
+                                    <p class="small text-muted">Get ready for exciting competitions!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-home me-2"></i>Back to Home
+                            </a>
+                            <a href="https://www.instagram.com/pccoeacm" class="btn btn-outline-primary btn-lg" target="_blank">
+                                <i class="fab fa-instagram me-2"></i>Follow Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-warning text-dark rounded">
+                    <h6 class="fw-bold mb-2">
+                        <i class="fas fa-exclamation-circle me-2"></i>Important Note
+                    </h6>
+                    <p class="mb-0 small">
+                        Please keep this confirmation safe. You may need to show proof of registration at the venue.
+                        For any queries, contact us at pccoeacm@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

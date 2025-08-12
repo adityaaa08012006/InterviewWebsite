@@ -1,0 +1,161 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-overlay">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-2 fw-bold mb-4 animate-fade-in">
+                        Welcome to <span class="text-warning">Anantya 2025</span>
+                    </h1>
+                    <p class="lead mb-4 animate-fade-in-delay">
+                        ACM PCCoE Student Chapter's Flagship Technical Event
+                    </p>
+                    <div class="hero-details mb-4 animate-fade-in-delay-2">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <i class="fas fa-calendar-alt fa-2x text-warning mb-2"></i>
+                                <h5>March 7-8, 2025</h5>
+                                <p>Two Days of Innovation</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <i class="fas fa-map-marker-alt fa-2x text-warning mb-2"></i>
+                                <h5>PCCOE Campus</h5>
+                                <p>Nigdi, Pune</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <i class="fas fa-users fa-2x text-warning mb-2"></i>
+                                <h5>500+ Participants</h5>
+                                <p>From Across Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="{{ url_for('register') }}" class="btn btn-warning btn-lg px-5 py-3 animate-pulse">
+                        <i class="fas fa-rocket me-2"></i>Register Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="display-4 fw-bold mb-4">About <span class="text-primary">Anantya 2025</span></h2>
+                <p class="lead mb-4">
+                    Anantya is the flagship technical event organized by the ACM PCCoE Student Chapter, 
+                    bringing together the brightest minds in technology for two days of intense competition, 
+                    learning, and innovation.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                        <h4>Coding Competitions</h4>
+                        <p>Challenge yourself with algorithmic problems, competitive programming, and coding marathons.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                        <h4>Web Development</h4>
+                        <p>Build innovative web applications and showcase your frontend and backend skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                        <h4>Cybersecurity</h4>
+                        <p>Test your security skills with CTF challenges and ethical hacking competitions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                        <h4>AI/ML Workshops</h4>
+                        <p>Explore artificial intelligence and machine learning through hands-on workshops.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                        <h4>Hackathons</h4>
+                        <p>Build innovative solutions to real-world problems in 24-hour hackathon challenges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-trophy fa-3x text-primary mb-3"></i>
+                        <h4>Exciting Prizes</h4>
+                        <p>Win amazing prizes worth over ₹1 lakh including cash prizes, certificates, and trophies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About ACM PCCoE Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold mb-4">About <span class="text-primary">ACM PCCoE</span></h2>
+                <p class="lead">
+                    The Association for Computing Machinery (ACM) PCCoE Student Chapter is a vibrant community 
+                    of computing enthusiasts dedicated to advancing the art, science, and application of computing.
+                </p>
+                <p>
+                    We organize various technical and non-technical events throughout the year to promote 
+                    innovation, peer learning, and community engagement among students. Our mission is to 
+                    foster excellence in computing education and research.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Largest educational computing society</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Promoting innovation and learning</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Building future tech leaders</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <i class="fas fa-university fa-10x text-primary opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="display-4 fw-bold mb-4">Ready to Join the Innovation?</h2>
+        <p class="lead mb-4">
+            Don't miss out on this incredible opportunity to showcase your skills and connect with fellow tech enthusiasts!
+        </p>
+        <a href="{{ url_for('register') }}" class="btn btn-warning btn-lg px-5 py-3">
+            <i class="fas fa-rocket me-2"></i>Register for Anantya 2025
+        </a>
+    </div>
+</section>
+{% endblock %}
